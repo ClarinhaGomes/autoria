@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potterharry</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="server.php">
+</head>
+<body>
+    <header>
+        <h1> ⚡︎ Bem-vindo, Trouxa! ⚡︎</h1>
+    </header>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="server.php">Exibir Dados</a>
+            <a href="desenvolvedores.html">Desenvolvedores</a>
+        </nav>
+
+    <main>
+        <h2>Formulário de Cadastro</h2>
+        <form action="server.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="digite seu e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha de e-mail:</label>
+                <input type="password" id="senha" name="senha" required placeholder="digite sua senha">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone para contato:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Informe seu gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outros">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual é seu filme preferido?</label>
+                <label><input type="checkbox" name="interesses[]" value="hp1">Pedra Filosofal</label>
+                <label><input type="checkbox" name="interesses[]" value="hp2">Câmara Secreta</label>
+                <label><input type="checkbox" name="interesses[]" value="hp3">Prisioneiro de Askaban</label>
+                <label><input type="checkbox" name="interesses[]" value="hp4">Cálice de fogo</label>
+                <label><input type="checkbox" name="interesses[]" value="hp5">Ordem da Fênix</label>
+                <label><input type="checkbox" name="interesses[]" value="hp6">Enigma do príncipe</label>
+                <label><input type="checkbox" name="interesses[]" value="hp7">Relíquias da Morte parte 1</label>
+                <label><input type="checkbox" name="interesses[]" value="hp8">Relíquias da Morte parte 2</label>
+
+            </div>
+
+            <div class="form-group">
+                <label for="casa">Qual é sua casa de Hogwarts?</label>
+                <select id="casa" name="casa">
+                    <option value="grifinória">Grifinória</option>
+                    <option value="sonserina">Sonserina</option>
+                    <option value="corvinal">Corvinal</option>
+                    <option value="lufa-lufa">Lufa-lufa</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="trem">Prove que você é fã digitando o nùmero do expresso de Hogwarts</label>
+                <input type="text" id="trem" name="trem" placeholder="dica: 4 dígitos">
+            </div>
+            
+            <div class="form-group">
+                <label for="voce sabe quem">Qual é o nome verdadeiro de Lord Voldemort?</label>
+                <input type="text" id="voce sabe quem" name="voce sabe quem" placeholder="você sabe quem">
+            </div>
+
+            <div class="form-group">
+            <label>Marque a alternativa que melhor corresponde as 3 Maldições Imperdoáveis:</label>
+            <label><input type="checkbox" name="a" value="primeira alternativa"> a) Expelliarmus, Stupefy, Petrificus Totalus</label>
+            <label><input type="checkbox" name="b" value="segunda alternativa">  b) Crucio, Imperius, Avada Kedavra</label>
+            <label><input type="checkbox" name="c" value="terceira alternativa"> c) Leviosa, Alohomora, Lumos</label>
+            <label><input type="checkbox" name="c" value="quarta alternativa">   d) Sectumsempra, Imperius, Confundo</label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="feiticos">Selecione seus feitiços favoritos:</label>
+                <select id="feiticos" name="feiticos[]" multiple size="5">
+                    <option value="wingardium leviosa">Wingardium Leviosa</option>
+                    <option value="expecto patronum">Expecto Patronum</option>
+                    <option value="Lumus">Lumus</option>
+                    <option value="Alohomora">Alohomora</option>
+                    <option value="obliviate">Obliviate</option>
+                    <option value="revelio">Revelio</option>
+                    <option value="Expelliarmus">Expelliarmus</option>
+                    <option value="Avada Kedavra">Avada Kedavra</option>
+                    <option value="Ridikkulus">Ridikkulus</option>
+                </select>
+                <p style="font-size: 0.9rem; color: #555;">Segure <strong>Ctrl</strong> para selecionar várias opções.</p>
+            </div>
+            <div class="form-group">
+                <label for="horario">Qual seu horário preferido para assistir filmes?</label>
+                <input type="time" id="horario-preferido" name="horario-preferido">
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Nos envie algo que tenha de Hp</label>
+                <input type="file" id="foto" name="foto" accept=".jpg, .png, .pdf">
+            </div>
+          
+            <div class="form-group">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        <footer>
+            <p> "Palavras são, na minha nada humilde opinião, nossa inesgotável fonte de magia"</p>
+            <p>                          -Alvo Dumbledore                                      </p>
+          </footer>
+        </div>
+    </main>
+
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Por: Clara Santana, Dávylla Kauany e Tálisson Miguel</p>        
+    </footer>
+</body>
+</html>
+
