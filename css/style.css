@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D2691E;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(205, 133, 63);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: rgb(160, 82, 45);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 90px;
+    background-color: #fc0808; 
+    border: 2px solid rgba(184, 134, 11);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(21, 1, 110, 0.1);
+}
+
+main h2 {
+    text-align: center;
+    color: #A0522D;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #A0522D;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #180142;
+    box-shadow: 0 0 5px rgba(90, 99, 224, 0.5);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group-inline label {
+    margin-right: 15px;
+}
+
+.form-group button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #FF8C00;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #5e2301;
+}
+
+
+footer {
+    background-color: #D2691E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow: 0px -4px 6px rgba(83, 212, 235, 0.1);
+    
+}
+
+.exibir{
+    color:#5e2301
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
