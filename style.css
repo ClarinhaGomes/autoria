@@ -1,5 +1,4 @@
 body {
-    background-image: url ('assets/img/castelo.jpg');
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -37,9 +36,7 @@ main {
     max-width: 800px;
     margin: 30px auto;
     padding: 90px;
-    background-color: transparent;
     border: 2px solid rgba(184, 134, 11);
-    backdrop-filter: blur(10px);
     color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(21, 1, 110, 0.1);
